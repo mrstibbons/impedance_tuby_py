@@ -54,9 +54,6 @@ class MeasurementBase(object):
 
     def transfer_function(self):
         if self._transfer_function is None:
-            # ISO 10534-2 2.10 method 1
-            #self._transfer_function = self.cps_mic12() / self.aps_mic1()
-            # Iso 10535-2 2.10 method 2
             self._transfer_function = np.sqrt((self.cps_mic12() / self.aps_mic1()) * (self.aps_mic2() / self.cps_mic21()))
 
         return self._transfer_function
@@ -105,23 +102,6 @@ class Measurement(MeasurementBase):
             divisor = np.exp(1j * self.project.k * self.project.mic_distance) - self.corrected_transfer_function()
 
             self._factor_of_reflection = (dividend / divisor) * np.exp(1j * 2 * self.project.k * self.project.mic1_pos)
-
-            # Calculation based on ASTM E1050 - 10 equations 17 to 22
-            # d = 1 + np.square(self.corrected_transfer_function().real)
-            # d += np.square(self.corrected_transfer_function().imag)
-            # d -= 2 * ((self.corrected_transfer_function().real * np.cos(self.project.k* self.project.mic_distance)) + (self.corrected_transfer_function().imag * np.sin(self.project.k * self.project.mic_distance)))
-            #
-            # rr = 2 * self.corrected_transfer_function().real * np.cos(self.project.k * ((2 * self.project.mic1_pos) + self.project.mic_distance))
-            # rr -= np.cos(2 * self.project.k * self.project.mic1_pos)
-            # rr -= (np.square(self.corrected_transfer_function().real) + np.square(self.corrected_transfer_function().imag) * np.cos(2 * self.project.k * (self.project.mic1_pos + self.project.mic_distance)))
-            # rr /= d
-            #
-            # ri = 2 * self.corrected_transfer_function().real * np.sin(self.project.k * ((2 * self.project.mic1_pos) + self.project.mic_distance))
-            # ri -= np.sin(2 * self.project.k * self.project.mic1_pos)
-            # ri -= (np.square(self.corrected_transfer_function().real) + np.square(self.corrected_transfer_function().imag) * np.sin(2 * self.project.k * (self.project.mic1_pos + self.project.mic_distance)))
-            # ri /= d
-            #
-            # self._factor_of_reflection = rr + (1j * ri)
 
         return self._factor_of_reflection
 

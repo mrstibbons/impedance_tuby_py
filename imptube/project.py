@@ -104,9 +104,6 @@ class Project(object):
             raise AttributeError("Second correction measurement missing!")
 
         if self._correction_function is None:
-            #corr_sqrt = np.sqrt(np.abs(self.first_correction_measurement.transfer_function()) * np.abs(self.second_correction_measurement.transfer_function()))
-            #corr_exp = np.exp(1j * (np.angle(self.first_correction_measurement.transfer_function()) + np.angle(self.second_correction_measurement.transfer_function())) / 2)
-            #self._correction_function = corr_sqrt * corr_exp
             self._correction_function = np.sqrt(self.second_correction_measurement.transfer_function() * self.first_correction_measurement.transfer_function())
 
         return self._correction_function
