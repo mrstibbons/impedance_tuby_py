@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1172</width>
+    <height>708</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ImpedanceTube Control Software ITCS</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="graphSelectionLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <widget class="QLabel" name="lblProject">
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Projekt</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="listProjectMeasurements">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnProjectClearSelection">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Auswahl Aufheben</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblMeasureParam">
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Messungs-Parameter</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="listMeasurementParameter">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="currentRow">
+         <number>-1</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnMeasureParamClearSelection">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Auswahl Aufheben</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="lblLowerDisplayedFrequency">
+          <property name="text">
+           <string>Untere angezeigte Frequenz:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="dsbLowerDisplayedFrequency">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblUpperDisplayedFrequency">
+          <property name="text">
+           <string>Obere angezeigte Frequenz:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="dsbUpperDisplayedFrequency">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnApplyFrequencyRange">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Auswahl anwenden</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnRefreshSelection">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Auswahl aktualisieren</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QwtPlot" name="qwtPlot"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1172</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Datei</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionExitApp"/>
+   </widget>
+   <widget class="QMenu" name="menuHilfe">
+    <property name="title">
+     <string>Hilfe</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAnalysis">
+    <property name="title">
+     <string>Analyse</string>
+    </property>
+    <addaction name="actionGetGrainImpedanceModelParameters"/>
+   </widget>
+   <widget class="QMenu" name="menuProject">
+    <property name="title">
+     <string>Projekt</string>
+    </property>
+    <addaction name="actionNewProject"/>
+    <addaction name="actionLoadProject"/>
+    <addaction name="actionSaveProject"/>
+    <addaction name="actionMeasureCorrFunc"/>
+    <addaction name="actionExportProject"/>
+   </widget>
+   <widget class="QMenu" name="menuTube">
+    <property name="title">
+     <string>Messrohr</string>
+    </property>
+    <addaction name="actionNewTube"/>
+    <addaction name="actionLoadTube"/>
+    <addaction name="actionSaveTube"/>
+    <addaction name="separator"/>
+    <addaction name="actionConfigureLevel"/>
+   </widget>
+   <widget class="QMenu" name="menuMeasurement">
+    <property name="title">
+     <string>Messung</string>
+    </property>
+    <addaction name="actionNewMeasurement"/>
+    <addaction name="actionRemoveMeasurement"/>
+    <addaction name="actionExportMeasurement"/>
+   </widget>
+   <widget class="QMenu" name="menuGraph">
+    <property name="title">
+     <string>Graph</string>
+    </property>
+    <addaction name="actionGraphSettings"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuTube"/>
+   <addaction name="menuProject"/>
+   <addaction name="menuMeasurement"/>
+   <addaction name="menuAnalysis"/>
+   <addaction name="menuGraph"/>
+   <addaction name="menuHilfe"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionPegel_Einstellen">
+   <property name="text">
+    <string>Pegel einstellen</string>
+   </property>
+  </action>
+  <action name="actionKorrekturfunktion_Bestimmen">
+   <property name="text">
+    <string>Kalibrieren</string>
+   </property>
+  </action>
+  <action name="actionEinstellungen">
+   <property name="text">
+    <string>Hardware-Einstellungen</string>
+   </property>
+  </action>
+  <action name="actionNeue_Messreihe">
+   <property name="text">
+    <string>Neue Messreihe</string>
+   </property>
+  </action>
+  <action name="actionMessreihe_ffnen">
+   <property name="text">
+    <string>Messreihe öffnen</string>
+   </property>
+  </action>
+  <action name="actionMessreihe_Speichern">
+   <property name="text">
+    <string>Messreihe speichern</string>
+   </property>
+  </action>
+  <action name="actionMessreihe_speichern_unter">
+   <property name="text">
+    <string>Messreihe speichern unter...</string>
+   </property>
+  </action>
+  <action name="actionMessreihe_exportieren">
+   <property name="text">
+    <string>Messreihe exportieren</string>
+   </property>
+  </action>
+  <action name="actionExitApp">
+   <property name="text">
+    <string>Programm beenden</string>
+   </property>
+  </action>
+  <action name="actionProjekt_Einstellungen">
+   <property name="text">
+    <string>Messreihen-Einstellungen</string>
+   </property>
+  </action>
+  <action name="actionHardware_Assistent">
+   <property name="text">
+    <string>Hardware-Assistent</string>
+   </property>
+  </action>
+  <action name="actionMessreihen_Assistent">
+   <property name="text">
+    <string>Messreihen-Assistent</string>
+   </property>
+  </action>
+  <action name="actionGetGrainImpedanceModelParameters">
+   <property name="text">
+    <string>Getreide-Modellparameter Bestimmen</string>
+   </property>
+  </action>
+  <action name="actionNewTube">
+   <property name="text">
+    <string>Neues Messrohr...</string>
+   </property>
+  </action>
+  <action name="actionLoadTube">
+   <property name="text">
+    <string>Messrohr laden</string>
+   </property>
+  </action>
+  <action name="actionNewProject">
+   <property name="text">
+    <string>Neues Projekt</string>
+   </property>
+  </action>
+  <action name="actionLoadProject">
+   <property name="text">
+    <string>Projekt laden</string>
+   </property>
+  </action>
+  <action name="actionSaveProject">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Projekt speichern</string>
+   </property>
+  </action>
+  <action name="actionSaveTube">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Messrohr speichern</string>
+   </property>
+  </action>
+  <action name="actionNewMeasurement">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Neue Messung</string>
+   </property>
+  </action>
+  <action name="actionRemoveMeasurement">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Messung entfernen</string>
+   </property>
+  </action>
+  <action name="actionExportMeasurement">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Messung exportieren</string>
+   </property>
+  </action>
+  <action name="actionMeasureCorrFunc">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Korrekturfunktion Messen</string>
+   </property>
+  </action>
+  <action name="actionConfigureLevel">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Pegel einstellen</string>
+   </property>
+  </action>
+  <action name="actionLinear">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Linear</string>
+   </property>
+  </action>
+  <action name="actionLogarithmic">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Logarithmisch</string>
+   </property>
+  </action>
+  <action name="actionMagintudeAngle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Betrag/Winkel</string>
+   </property>
+  </action>
+  <action name="actionRealImaginary">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Real/Imaginär</string>
+   </property>
+  </action>
+  <action name="actionExportAsPicture">
+   <property name="text">
+    <string>Als Grafik exportieren</string>
+   </property>
+  </action>
+  <action name="actionExportProject">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Exportieren</string>
+   </property>
+  </action>
+  <action name="actionGraphSettings">
+   <property name="text">
+    <string>Einstellungen</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

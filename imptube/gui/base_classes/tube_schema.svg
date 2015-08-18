@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="400"
+   height="200"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="tube_schema.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="179.45049"
+     inkscape:cy="-0.95645268"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:snap-bbox="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1055"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3769"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       spacingx="0.5px"
+       spacingy="0.5px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-852.36218)">
+    <rect
+       style="fill:#ffffff"
+       id="rect2989"
+       width="41.921329"
+       height="56.063465"
+       x="40.901024"
+       y="942.1134" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.5035606;stroke-opacity:1"
+       id="rect2991"
+       width="8.496253"
+       height="22.612387"
+       x="37.767502"
+       y="990.03308"
+       ry="0"
+       inkscape:transform-center-y="-0.07814241"
+       inkscape:transform-center-x="-0.059821606" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.99141616px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 365,914.35363 0,114.01707"
+       id="path3773"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#999999;stroke:#000000;stroke-width:0.25980639;stroke-opacity:1"
+       d="m 365.31076,970.90177 0,-56.85125 7.61355,0 7.61356,0 0,56.85125 0,56.85113 -7.61356,0 -7.61355,0 0,-56.85113 z"
+       id="path3775"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.05577171;stroke-opacity:1"
+       id="rect3777"
+       width="19.479761"
+       height="7.3243051"
+       x="188.05367"
+       y="906.93427"
+       ry="0" />
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.04968894;stroke-opacity:1"
+       id="rect3779"
+       width="19.233307"
+       height="7.3329253"
+       x="225.50204"
+       y="906.95331" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="187"
+       y="921.86218"
+       id="text3781"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3783"
+         x="187"
+         y="921.86218"
+         style="font-size:8px;line-height:125%">Mic 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="224.5"
+       y="922.36218"
+       id="text3781-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3783-0"
+         x="224.5"
+         y="922.36218"
+         style="font-size:8px;line-height:125%">Mic 2</tspan><tspan
+         sodipodi:role="line"
+         x="224.5"
+         y="932.36218"
+         style="font-size:8px;line-height:125%"
+         id="tspan3806" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:tb-rl;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="373"
+       y="934.36218"
+       id="text3808"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3810"
+         x="921.36218"
+         y="386">Probe</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.98768157px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 60.990305,1032.3752 -0.04311,10.0291"
+       id="path3816"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.11733007px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 364.91161,1032.3705 0,9.9876"
+       id="path3818"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="352.5"
+       y="1047.3622"
+       id="text3822"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3824"
+         x="352.5"
+         y="1047.3622">x = 0</tspan><tspan
+         sodipodi:role="line"
+         x="352.5"
+         y="1057.3622"
+         id="tspan3826" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="50"
+       y="1047.3622"
+       id="text3828"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="50"
+         y="1047.3622"
+         id="tspan3834">x = l</tspan><tspan
+         sodipodi:role="line"
+         x="50"
+         y="1057.3622"
+         id="tspan3832" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 61.46875,1037.3309 304,0 0,0"
+       id="path3838"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:6px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="200"
+       y="1044.8622"
+       id="text3840"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3842"
+         x="200"
+         y="1044.8622">Länge</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.06511056px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 24.883681,977.90564 -9.861112,0"
+       id="path3844"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.99136549px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 25.641475,1029.369 -11.248186,0"
+       id="path3846"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.00072825px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 19.996422,977.8614 0,51.4971"
+       id="path3854"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.02916718px;font-style:normal;font-weight:normal;line-height:0%;letter-spacing:0px;word-spacing:0px;writing-mode:tb-rl;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="15.242369"
+       y="1139.3463"
+       id="text3856"
+       sodipodi:linespacing="0%"
+       transform="scale(1.1481155,0.87099252)"><tspan
+         sodipodi:role="line"
+         id="tspan3858"
+         x="1141.5238"
+         y="13.064888"
+         style="line-height:0%;letter-spacing:-0.90370154px">Durchmesser</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.14085948px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 235,894.9497 0,9.7617 0,0"
+       id="path3860"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.14313579px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 365,894.9081 0,9.8007"
+       id="path3862"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 235,47.5 130,0"
+       id="path3864"
+       inkscape:connector-curvature="0"
+       transform="translate(0,852.36218)" />
+    <text
+       xml:space="preserve"
+       style="font-size:6px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="285"
+       y="897.36218"
+       id="text3866"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3868"
+         x="285"
+         y="897.36218">Position Mic 2</tspan><tspan
+         sodipodi:role="line"
+         x="285"
+         y="904.86218"
+         id="tspan3870" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 197.5,35 0,-10 0,0"
+       id="path3872"
+       inkscape:connector-curvature="0"
+       transform="translate(0,852.36218)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 197.5,30 365,30"
+       id="path3874"
+       inkscape:connector-curvature="0"
+       transform="translate(0,852.36218)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 365,25 0,10"
+       id="path3876"
+       inkscape:connector-curvature="0"
+       transform="translate(0,852.36218)" />
+    <text
+       xml:space="preserve"
+       style="font-size:6px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="285"
+       y="880.86218"
+       id="text3878"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="285"
+         y="880.86218"
+         id="tspan3882">Position Mic 1</tspan></text>
+  </g>
+</svg>

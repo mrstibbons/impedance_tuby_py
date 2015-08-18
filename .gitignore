@@ -1,0 +1,6 @@
+.idea/
+*.project
+*.tube
+!*.py
+*.pyc
+!*.ui

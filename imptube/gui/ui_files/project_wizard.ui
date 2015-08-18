@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>newProjectWizard</class>
+ <widget class="QWizard" name="newProjectWizard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>453</width>
+    <height>340</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Projektassistent</string>
+  </property>
+  <widget class="QWizardPage" name="wpProjectData">
+   <property name="title">
+    <string>Projektdaten</string>
+   </property>
+   <property name="subTitle">
+    <string/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QWidget" name="widProjectData" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="lblName">
+           <property name="text">
+            <string>Name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="editName"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="lblDate">
+           <property name="text">
+            <string>Datum</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QDateEdit" name="deDate">
+           <property name="calendarPopup">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lblComment">
+           <property name="text">
+            <string>Kommentar</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QTextEdit" name="teComment"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWizardPage" name="wpMaterialParameters">
+   <property name="title">
+    <string>Materialparameter</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QWidget" name="widMaterialParameters" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QFormLayout" name="formLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="lblMaterial">
+           <property name="text">
+            <string>Material</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="editMaterial"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="lblMaterialDepth">
+           <property name="text">
+            <string>Materialstärke</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lblDegreeOfCleaning">
+           <property name="text">
+            <string>Reinigungsgrad</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="lblAmountOfScrub">
+           <property name="text">
+            <string>Anteil Fraßmehl</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="lblTSeedWeight">
+           <property name="text">
+            <string>TKG</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QDoubleSpinBox" name="dsbAmountOfScrub">
+           <property name="suffix">
+            <string> %</string>
+           </property>
+           <property name="decimals">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QDoubleSpinBox" name="dsbDegreeOfCleaning">
+           <property name="suffix">
+            <string> %</string>
+           </property>
+           <property name="decimals">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <double>100.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.100000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QDoubleSpinBox" name="dsbMaterialThickness">
+           <property name="suffix">
+            <string> mm</string>
+           </property>
+           <property name="decimals">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <double>1000.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QDoubleSpinBox" name="dsbThousandSeedWeight">
+           <property name="suffix">
+            <string> g</string>
+           </property>
+           <property name="maximum">
+            <double>1000.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWizardPage" name="wpEnvironmentParameters">
+   <property name="title">
+    <string>Umgebungsparamter</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <widget class="QWidget" name="widEnvironmentData" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QFormLayout" name="formLayout_3">
+         <item row="0" column="0">
+          <widget class="QLabel" name="lblTemperature">
+           <property name="text">
+            <string>Temperatur</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="lblMoisture">
+           <property name="text">
+            <string>rel. Luftfeuchte</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lblPressure">
+           <property name="text">
+            <string>Luftdruck</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QDoubleSpinBox" name="dsbTemperature">
+           <property name="suffix">
+            <string> °C</string>
+           </property>
+           <property name="singleStep">
+            <double>0.100000000000000</double>
+           </property>
+           <property name="value">
+            <double>20.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QDoubleSpinBox" name="dsbMoisture">
+           <property name="suffix">
+            <string> %</string>
+           </property>
+           <property name="maximum">
+            <double>100.000000000000000</double>
+           </property>
+           <property name="value">
+            <double>30.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QDoubleSpinBox" name="dsbPressure">
+           <property name="suffix">
+            <string> kPa</string>
+           </property>
+           <property name="decimals">
+            <number>4</number>
+           </property>
+           <property name="maximum">
+            <double>200.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.100000000000000</double>
+           </property>
+           <property name="value">
+            <double>101.325000000000003</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWizardPage" name="wpSelectTube">
+   <property name="title">
+    <string>Messrohr Auswählen</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_9">
+    <item>
+     <widget class="QWidget" name="wdSelectTube" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <widget class="QRadioButton" name="rbCurrentTube">
+           <property name="text">
+            <string>Aktuelles Rohr verwenden</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rbTubeFromFile">
+           <property name="text">
+            <string>Rohr aus Datei laden</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rbNewTube">
+           <property name="text">
+            <string>Neues Rohr erstellen</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWizardPage" name="wpMeasurementParameters">
+   <property name="title">
+    <string>Messungs-Parameter</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_6">
+    <item>
+     <widget class="QWidget" name="wdMeasurementParameters" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_16">
+       <item>
+        <layout class="QFormLayout" name="formLayout_4">
+         <property name="fieldGrowthPolicy">
+          <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="lblAmountMeans">
+           <property name="text">
+            <string>Anzahl Mittelungen</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSpinBox" name="sbMeanAmount">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>10000</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="lblFFTResolution">
+           <property name="text">
+            <string>FFT-Auflösung</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QDoubleSpinBox" name="dsbFFTResolution">
+           <property name="suffix">
+            <string> Hz</string>
+           </property>
+           <property name="minimum">
+            <double>0.100000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>100.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.100000000000000</double>
+           </property>
+           <property name="value">
+            <double>1.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="lblFFTWindow">
+           <property name="text">
+            <string>FFT-Fenster</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QComboBox" name="cbFFTWindow">
+           <item>
+            <property name="text">
+             <string>Bartlett-Hann</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Bartlett</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Blackman</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Blackman-Harris</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Bohman</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Boxcar/Rechteck</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Dreieck</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Flat-Top</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hamming</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hann</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Parzen</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="lblSignal">
+           <property name="text">
+            <string>Signal</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QComboBox" name="cbSignalSelect"/>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="lblMeasurementTime">
+           <property name="text">
+            <string>Messdauer</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLabel" name="lblMeasurementTimeDisplay">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lblOverlap">
+           <property name="text">
+            <string>Überlappung</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QSpinBox" name="sbOverlap">
+           <property name="suffix">
+            <string> %</string>
+           </property>
+           <property name="prefix">
+            <string/>
+           </property>
+           <property name="value">
+            <number>90</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>editName</tabstop>
+  <tabstop>deDate</tabstop>
+  <tabstop>teComment</tabstop>
+  <tabstop>editMaterial</tabstop>
+  <tabstop>dsbMaterialThickness</tabstop>
+  <tabstop>dsbDegreeOfCleaning</tabstop>
+  <tabstop>dsbAmountOfScrub</tabstop>
+  <tabstop>dsbThousandSeedWeight</tabstop>
+  <tabstop>dsbTemperature</tabstop>
+  <tabstop>dsbMoisture</tabstop>
+  <tabstop>dsbPressure</tabstop>
+  <tabstop>rbCurrentTube</tabstop>
+  <tabstop>rbTubeFromFile</tabstop>
+  <tabstop>rbNewTube</tabstop>
+  <tabstop>sbMeanAmount</tabstop>
+  <tabstop>dsbFFTResolution</tabstop>
+  <tabstop>sbOverlap</tabstop>
+  <tabstop>cbFFTWindow</tabstop>
+  <tabstop>cbSignalSelect</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

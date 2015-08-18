@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>hwSettingsDialog</class>
+ <widget class="QDialog" name="hwSettingsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>610</width>
+    <height>299</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Hardware-Einstellungen</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabRecording">
+      <attribute name="title">
+       <string>Aufnahme</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="lblRecordingSettings">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Aufnahme</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="lblRecMic1">
+           <property name="text">
+            <string>Mikrofon 1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="cbRecMic1"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lblRecMic2">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>Mikrofon 2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QComboBox" name="cbRecMic2">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="lblRecSamplFreq">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>Sampling Freq.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QComboBox" name="cbRecSampFreq">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabRecording">
+      <attribute name="title">
+       <string>Rohr</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QFormLayout" name="tubeSettingsLayout">
+         <item row="1" column="0">
+          <widget class="QLabel" name="lblTubeForm">
+           <property name="text">
+            <string>Form</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="cbTubeForm">
+           <item>
+            <property name="text">
+             <string>Rund</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Quadratisch</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lblTubeLength">
+           <property name="text">
+            <string>Länge in m</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="editTubeLength">
+           <property name="text">
+            <string>sdf</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="lblTubeDiameter">
+           <property name="text">
+            <string>Seitenlänge/Durchmesser in m</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="editTubeDiameter">
+           <property name="text">
+            <string>sdf</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="lblMicDistanceSmall">
+           <property name="text">
+            <string>Mikrofonabstand (eng) in m</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="editMicDistanceSmall">
+           <property name="text">
+            <string>sdf</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="lblMicDistanceWide">
+           <property name="text">
+            <string>Mikrofonabstand (weit) in m</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="editMicDistanceWide">
+           <property name="text">
+            <string>sdf</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="2">
+          <widget class="QLabel" name="lblTubeSettings">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Rohr</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabFFT">
+      <attribute name="title">
+       <string>FFT</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QFormLayout" name="FFTSettingsLayout">
+         <item row="1" column="0">
+          <widget class="QLabel" name="lblFFTWindow">
+           <property name="text">
+            <string>Fensterfunktion</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="cbFFTWindow">
+           <item>
+            <property name="text">
+             <string>Rechteck</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hamming</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Hanning</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Bartlett (Triangular)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Blackman 3-term</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Blackman-Harris 4-term</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Blackman-Harris 7-Term</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Tuckey (alpha = 0.66)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Sinus (halb-sinus Fenster)</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lblFFTResolution">
+           <property name="text">
+            <string>Auflösung in Hz</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="editFFTResoultion"/>
+         </item>
+         <item row="0" column="0" colspan="2">
+          <widget class="QLabel" name="lblFFTSettings">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>FFT</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabSignal">
+      <attribute name="title">
+       <string>Signal</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <layout class="QFormLayout" name="signalSettingsLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="lblSignalSettings">
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Signal</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="lblSignalType">
+           <property name="text">
+            <string>Signaltyp</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="cbSignalType">
+           <item>
+            <property name="text">
+             <string>Multisinus Crest 96</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Multisinus Crest 44</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Weißes Rauschen</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lblSignalDevice">
+           <property name="text">
+            <string>Gerät</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QComboBox" name="cbSignalDevice"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="btnAbort">
+       <property name="text">
+        <string>Abbrechen</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnLoadHwSettings">
+       <property name="text">
+        <string>Laden</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSaveHwSettings">
+       <property name="text">
+        <string>Speichern</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
